@@ -1,6 +1,6 @@
-import Logo from '../media/logo.png';
+import Logo from '../media/logo-white.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'; // Correct import
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 function Footer() {
   return (
@@ -58,7 +58,7 @@ function Footer() {
       </section>
     </footer>
     <div className='footer-line'>
-      <p>Copyright 2024 josify Inc. All rights reserved.</p>
+      <p>Copyright 2024 Josify Inc. All rights reserved.</p>
       <nav>
         <ul>
           <li>PRIVACY POLICY</li>

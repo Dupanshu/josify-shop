@@ -4,7 +4,10 @@ import Logo from '../media/logo.png';
 function Header() {
   return (
    <>
-    <div className='header-line'></div>
+    <div className='header-line'>
+      <p>UP TO 50% OFF NEW OUTFIT PICS.</p>
+      <p>EXTRA 50% OFF SALE</p>
+    </div>
     <header>
       <div className='container flex space-between'>
         <div class="center">
