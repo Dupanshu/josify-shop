@@ -152,6 +152,18 @@ header button {
 /*-------------------Home Product Section------------------------*/
 /*---------------------------------------------------------------*/
 
+.sort-button {
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.sort-button + .sort-button {
+    margin-left: 5px;
+}
+
 .section-heading {
     font-size: 20px;
     font-weight: 700;
@@ -218,6 +230,8 @@ p.product-title {
     font-weight: 700;
     color: #000;
 }
+
+
 
 /*---------------------------------------------------------------*/
 /*-------------------Hero Banner---------------------------------*/
@@ -454,6 +468,7 @@ footer {
     justify-content: space-between;
     width: 20%;
     padding-top: 15px;
+    cursor: pointer;
 }
 
 footer section {

@@ -7,8 +7,9 @@ import RedStar from '../media/star-red.png';
 import YellowStar from '../media/star-yellow.png';
 
 
-function Products() {
+function Products(props) {
   const [products, setProducts] = useState([]);
+  const [originalProducts, setOriginalProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
@@ -16,7 +17,8 @@ function Products() {
     const fetchProducts = async () => {
       try {
         const response = await axios.get('https://fakestoreapi.com/products');
-        setProducts(response.data.slice(0, 8));
+        setProducts(response.data.slice(0, props.numberOfProducts));
+        setOriginalProducts(response.data.slice(0, props.numberOfProducts))
       } catch (error) {
         setError (error);
       } finally {
@@ -27,12 +29,33 @@ function Products() {
     fetchProducts();
   }, []);
 
+  const sortByPrice = () => {
+    const sortedProducts = [...products].sort((a, b) => a.price - b.price);
+    setProducts(sortedProducts);
+  }
+
+  const sortByCategory = () => {
+    const sortedProducts = [...products].sort((a, b) => {
+      if (a.category < b.category) return -1;
+      if (a.category > b.category) return 1;
+      return 0;
+    });
+    setProducts(sortedProducts);
+  };
+
+  const resetToDefault = () => {
+    setProducts(originalProducts);
+  };
+
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (
     <section className='josify-section'>
       <div className='container'>
+        <button className='sort-button' onClick={resetToDefault}>All</button>
+        <button className='sort-button' onClick={sortByPrice}>Sort by Price</button>
+        <button className='sort-button' onClick={sortByCategory}>Sort by Category</button>
         <div className="section-heading center">
           <h2>Top Picks for You</h2>
         </div>

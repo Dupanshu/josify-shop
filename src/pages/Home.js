@@ -4,10 +4,13 @@ import Products from '../components/Products';
 import HeroBanner from '../components/HeroBanner';
 
 function Home() {
+
+  const numberOfProducts = 20;
+
   return (
     <>
       <ImageSlider />
-      <Products />
+      <Products numberOfProducts={numberOfProducts} />
       <HeroBanner />
     </>
   )
