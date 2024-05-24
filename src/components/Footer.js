@@ -7,7 +7,7 @@ function Footer() {
     <>
     <footer>
       <div className='footer-top'>
-        <a href="#"><img src={Logo} class="header-logo" alt="header-logo" /></a>
+        <a href="#"><img src={Logo} className="header-logo" alt="header-logo" /></a>
         <div className='icons'>
           <FontAwesomeIcon icon={faYoutube} />
           <FontAwesomeIcon icon={faFacebook} />

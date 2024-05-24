@@ -1,15 +1,14 @@
 
 import ImageSlider from '../components/ImageSlider';
+import Products from '../components/Products';
+import HeroBanner from '../components/HeroBanner';
 
 function Home() {
   return (
     <>
-        <ImageSlider />
-        <div className='container'>
-            <section>
-                
-            </section>
-        </div>
+      <ImageSlider />
+      <Products />
+      <HeroBanner />
     </>
   )
 }
