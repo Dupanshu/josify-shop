@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
@@ -8,7 +9,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 
+
 function App() {
+
   return (
     <main>
       <Header />

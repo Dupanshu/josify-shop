@@ -6,14 +6,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
-  const [isFormVisible, setFormVisible] = useState(false);
+  const [showDialog, setShowDialog] = useState(false);
 
-  const toggleFormVisibility = () => {
-    setFormVisible(!isFormVisible);
-  };
+  const close = () => {
+    setShowDialog(false);
+  }
+
+  const overlay = <div className='overlay' onClick={close}></div>;
 
   return (
    <section className='heading-head'>
+    <Form show={showDialog} close={close} />
+    { showDialog ? overlay : null }
     <div className='header-line'>
       <p>UP TO 50% OFF NEW OUTFIT PICS.</p>
       <p>EXTRA 50% OFF SALE</p>
@@ -27,19 +31,18 @@ function Header() {
         </div>
         <nav>
           <ul className='flex space-between'>
-            <li><Link to='/#product-section'>Products</Link></li>
+            <li><a href='#product-section'>Products</a></li>
             <li><Link to='/aboutus'>About Us</Link></li>
           </ul>
         </nav>
         <div className='right-header'>
-          <button onClick={toggleFormVisibility} >LOG IN</button>
+          <button onClick={() => { setShowDialog(true) }} >LOG IN</button>
           <Link to='/cart'>
             <FontAwesomeIcon icon={faShoppingCart} className='cart-icon' />
           </Link>
         </div>
       </div>
     </header>
-    {isFormVisible && <Form />}
    </section>
   )
 }

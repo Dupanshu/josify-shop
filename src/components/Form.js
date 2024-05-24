@@ -1,5 +1,8 @@
 
-function Form() {
+function Form(props) {
+  if (!props.show) {
+    return <></>;
+  }
   return (
     <div className='form'>
       <h1>Login</h1>

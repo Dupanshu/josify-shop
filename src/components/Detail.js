@@ -4,7 +4,7 @@ import axios from 'axios';
 import { CiCircleMore } from "react-icons/ci";
 import { TbTruckDelivery } from "react-icons/tb";
 import { CiHeart } from "react-icons/ci";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import StarRatings from 'react-star-ratings';
 import Logo from '../media/logo.png';
 import Rating from 'react-rating';
@@ -47,14 +47,14 @@ function Detail() {
 
   const styleNumber = generateStyleNumber();
 
-  return (
-    // <motion.div
-    // initial={{ opacity: 0, y: 50 }}
-    // animate={{ opacity: 1, y: 0 }}
-    // exit={{ opacity: 0, y: -50 }}
-    // transition={{ type: "spring", duration: 0.5, bounce: 0.25 }}
-    // >
+  return (  
     <>
+      <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
+      transition={{ type: "spring", duration: 0.5, bounce: 0.25 }}
+      >
       <section className='product-top'>
       <nav>
           <ul className='flex space-between container'>
@@ -110,6 +110,7 @@ function Detail() {
       <section>
         {/* import extra products for display here */}
       </section>
+    </motion.div>
     </>
   );
 }

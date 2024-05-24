@@ -4,6 +4,10 @@
     --secondary-color: #5152f0;
 }
 
+html {
+    scrollbar-gutter: unset;
+}
+
 body {
     font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
     background-color: rgb(245, 245, 246);
@@ -49,4 +53,8 @@ body {
 
 .gap-30 {
     gap: 30px;
+}
+
+.josify-section {
+    margin: 40px 0;
 }
