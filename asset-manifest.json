@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/josify-shop/static/css/main.1158bfa7.css",
+    "main.js": "/josify-shop/static/js/main.2cf47657.js",
+    "static/media/fashion-forward-resize.jpg": "/josify-shop/static/media/fashion-forward-resize.83dce16566992e15cc1a.jpg",
+    "static/media/apple-devices.png": "/josify-shop/static/media/apple-devices.bc023848cecc191f57d2.png",
+    "static/media/notFound.png": "/josify-shop/static/media/notFound.7aadce093393450edc8e.png",
+    "static/media/joseph.jpg": "/josify-shop/static/media/joseph.8938d9585f340c902e42.jpg",
+    "static/media/flash-sale.jpg": "/josify-shop/static/media/flash-sale.42379d60d2ca89a7bcfb.jpg",
+    "static/media/credit-cards.jpg": "/josify-shop/static/media/credit-cards.dc01ebb2cd863f0da154.jpg",
+    "static/media/fashion-collection.jpg": "/josify-shop/static/media/fashion-collection.8ee630d8fa003871330a.jpg",
+    "static/media/jashanpreet.jpg": "/josify-shop/static/media/jashanpreet.b4c0c0b5c51f97031e80.jpg",
+    "static/media/logo.png": "/josify-shop/static/media/logo.51d6ea1877e6e10ebc5e.png",
+    "static/media/manpreet.jpg": "/josify-shop/static/media/manpreet.bd4d00965940c434aed0.jpg",
+    "static/media/logo-white.png": "/josify-shop/static/media/logo-white.a85e49d0557e628e8aeb.png",
+    "static/media/dupanshu.jpg": "/josify-shop/static/media/dupanshu.a7ef1b2057c1f4ce72b8.jpg",
+    "static/media/desk.jpeg": "/josify-shop/static/media/desk.642f2c61668dd5a5803f.jpeg",
+    "static/media/star-grey.png": "/josify-shop/static/media/star-grey.71d4f56b09eebfd4aa5d.png",
+    "static/media/star-red.png": "/josify-shop/static/media/star-red.60381401775c12342718.png",
+    "static/media/star-yellow.png": "/josify-shop/static/media/star-yellow.a5ea6ee3c1ad5251e006.png",
+    "static/media/laptop.jpg": "/josify-shop/static/media/laptop.1d31f820971be18c9c7f.jpg",
+    "index.html": "/josify-shop/index.html",
+    "main.1158bfa7.css.map": "/josify-shop/static/css/main.1158bfa7.css.map",
+    "main.2cf47657.js.map": "/josify-shop/static/js/main.2cf47657.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1158bfa7.css",
+    "static/js/main.2cf47657.js"
+  ]
+}
